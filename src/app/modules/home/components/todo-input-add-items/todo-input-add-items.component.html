@@ -1,0 +1,3 @@
+<input type="text" class="" [(ngModel)]="task" (keyup.enter)="submitItem()  " placeholder="type your new task here">
+<button *ngIf="(index != undefined)" (click)="reset()" class="cancel">Cancel</button>
+<button [ngClass]="{'update': (index != undefined) }" (click)="submitItem()">{{ buttonName }}</button>
